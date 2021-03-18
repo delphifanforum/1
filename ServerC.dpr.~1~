@@ -1,0 +1,14 @@
+program ServerC;
+
+uses
+  Vcl.Forms,
+  Umain in 'Umain.pas' {frmmain};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tfrmmain, frmmain);
+  Application.Run;
+end.
